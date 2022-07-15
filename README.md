@@ -18,7 +18,7 @@ State trong tiếng Anh có nghĩa là trạng thái. Trong thế giới của m
 
 Flutter chuyển đổi cách lập trình truyền thống từ lập trình mệnh lệnh (imperative) sang lập trình khai báo (declarative). Điều này có nghĩa là Flutter UI phản ánh các trạng thái trong app:
 
-![1]()
+![1](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/1.png)
 
 Trong định nghĩa của trang Flutter ở [đây](https://api.flutter.dev/flutter/widgets/State-class.html) có nhắc đến, State có thể được đọc một cách đồng bộ khi widget được build và có thể thay đổi trong suốt vòng đời của widget đó.
 
@@ -50,7 +50,7 @@ cùng tìm hiểu tiếp nhé!
 
 - <u>Vòng đời:</u> Vòng đời của Stateful widget thì khá phức tạp, các bạn hãy theo dõi hình sau đây nhé! 
   
-  ![2]()
+  ![2](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/2.png)
 
 ***Giải thích:*** 
 
@@ -100,7 +100,7 @@ Các bạn tạo mới Flutter project và file `like_button.dart` nhé!
 
 Trên VS Code, để tạo mới một StalessWidget bạn chỉ cần gõ *stl* thì trình biên dịch sẽ đề xuất cho bạn
 
-![3]()
+![3](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/3.png)
 
 Bạn đặt tên class là `LikeButton` và nhớ import  `package:flutter/material.dart` nhé!
 
@@ -159,19 +159,20 @@ Rồi chúng ta cùng build và xem kết quả nhé!
 
 ##### Kết quả:
 
-![4]()
+![4](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/4.png)
 
 Khi ấn nút like thì trên console sẽ log ra cho ta text *"Liked"*. 
 
 ### 5.2. StatefulWidget
 
 Các bạn có thể dùng lại project trước đó hoặc tạo mới project tương tự như vậy.
+![5](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/5.png)
 
 ##### Bước 1: Tạo mới một StatefulWidget
 
 Trên VS Code, để tạo mới một StalefulWidget bạn chỉ cần gõ *stf* thì trình biên dịch sẽ đề xuất cho bạn. Nếu bạn đang sử dụng project trước thì bạn có thể convert `LikeButton` sang StatefulWidget bằng cách di chuyển con trỏ về đầu dòng class LikeButton -> click vào bóng đèn màu vàng chọn *Convert to StatefulWidget*.
 
-![6]()
+![6](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/6.png)
 
 Sau khi convert thì `LikeButton` đã trở thành như thế này:
 
@@ -231,7 +232,7 @@ class _LikeButtonState extends State<LikeButton> {
 
 Vậy là xong! Chúng ta cùng build lên xem kết quả nhé! Hiện tại, mình vẫn giữ `MyHomePage` giống như phần StatelessWidget nha!
 
-![7]()
+![7](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/7.gif)
 
 Các bạn có để ý thấy phần `Text` ở dưới vẫn chưa khớp với trạng thái của button không? Đây là lúc chúng ta sẽ biến `MyHomePage` thành một StatefulWidget luôn!
 
@@ -329,7 +330,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ##### Kết quả
 
-![8]()
+![8](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif)
 
 ## 6. Tổng kết
 
