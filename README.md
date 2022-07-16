@@ -332,6 +332,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ![8](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif)
 
+#### [Demo source code](https://github.com/vanle57/stateless-stateful-widget/tree/main/demo%20source%20code)
+
 ## 6. Tổng kết
 
 Tóm lại sự khác nhau rõ rệt và có thể dễ dàng thấy được nhất giữa StalessWidget và StatefulWidget chính là khả năng reload của widget ở runtime. Nếu như StalessWidget không thể thay đổi chỉ trừ khi được khởi tạo lại thì StatefulWidget có các trạng thái có thể thay đổi được và Flutter sẽ render lại UI cho phù hợp với từng trạng thái.
