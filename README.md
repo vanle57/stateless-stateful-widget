@@ -172,7 +172,7 @@ Rồi chúng ta cùng build và xem kết quả nhé!
 
 ##### Kết quả:
 
-<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/4.png" style="width:50%;height:50%;">
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/4.png" style="width:40%;height:40%;">
 
 Khi ấn nút like thì trên console sẽ log ra cho ta text *"Liked"*. 
 
@@ -245,7 +245,7 @@ class _LikeButtonState extends State<LikeButton> {
 
 Vậy là xong! Chúng ta cùng build lên xem kết quả nhé! Hiện tại, mình vẫn giữ `MyHomePage` giống như phần StatelessWidget nha!
 
-<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/7.gif" style="width:50%;height:50%;">
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/7.gif" style="width:70%;height:70%;">
 
 Các bạn có để ý thấy phần `Text` ở dưới vẫn chưa khớp với trạng thái của button không? Đây là lúc chúng ta sẽ biến `MyHomePage` thành một StatefulWidget luôn!
 
@@ -343,7 +343,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ##### Kết quả
 
-<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif" style="width:50%;height:50%;">
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif" style="width:70%;height:70%;">
 
 #### [Demo source code](https://github.com/vanle57/stateless-stateful-widget/tree/main/demo%20source%20code)
 
