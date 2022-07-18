@@ -10,7 +10,20 @@ Khi tiếp xúc với Flutter, có lẽ các bạn đều đã quen hoặc nếu
 
 Mình cũng khá chắc là trong số những bạn đang đọc bài viết này cũng có một số bạn đã biết về hai loại này nhưng để hiểu về nó thì còn khá mơ hồ. Vậy nên bài viết này mình sẽ cố gắng trình bày về chúng một cách đơn giản nhất có thể để các bạn nắm bắt được.
 
-## 3. Khái niệm State
+## 3. Chuẩn bị
+IDE:
+
+Visual Studio Code version 1.67.0
+
+Android Studio Chipmunk 2021.2.1
+
+XCode version 13.3.1
+
+Flutter SDK version 2.10.5
+
+Kiến thức: ngôn ngữ lập trình Dart và Flutter cơ bản
+
+## 4. Khái niệm State
 
 State trong tiếng Anh có nghĩa là trạng thái. Trong thế giới của mobile dev, nó thể hiện các trạng thái của ứng dụng. Mình ví dụ đơn giản nhé. Khi các bạn check / uncheck check box thì đó là hai trạng thái của check box. Ví dụ rõ ràng hơn nữa là màn hình đăng nhập thể hiện ba trạng thái nhập email / mật khẩu sai định dạng (validate error), đăng nhập thành công hoặc đăng nhập fail (api error).
 
@@ -25,9 +38,9 @@ Trong định nghĩa của trang Flutter ở [đây](https://api.flutter.dev/flu
 Vậy thì Stateless Widget và Stateful Widget là gì? Chúng khác nhau ra sao? Chúng ta
 cùng tìm hiểu tiếp nhé!
 
-## 4. StatelessWidget vs StatefulWidget
+## 5. StatelessWidget vs StatefulWidget
 
-### 4.1. StatelessWidget
+### 5.1. StatelessWidget
 
 - Stateless widget là các widget có trạng thái không thể thay đổi sau khi chúng được build. Chúng chỉ đơn thuần nhận dữ liệu và hiển thị một cách thụ động. Nếu muốn render lại thì ta phải khởi tạo lại chúng.
 
@@ -42,7 +55,7 @@ cùng tìm hiểu tiếp nhé!
   
   - Khi `InheritedWidget` chúng phụ thuộc vào thay đổi. Cái này nghe khá khó hiểu nhỉ? Mình sẽ có một bài viết giải thích cụ thể về InheritedWidget sau nhé!
 
-### 4.2. StatefulWidget
+### 5.2. StatefulWidget
 
 - Stateful widget là các widget có thể thay đổi trạng thái. Khác với stateless widget, chúng ta không cần thiết phải khởi tạo lại stateful widget để thay đổi chúng mà chỉ cần thay đổi state của chúng và Flutter sẽ gọi hàm `build()` để render lại UI cho phù hợp với state đó.
 
@@ -86,13 +99,13 @@ cùng tìm hiểu tiếp nhé!
   
   > Túm lại, như bạn đã thấy ở trên hàm `build()` là cái hàm được gọi liên tục. Bởi vì sao? Bởi vì nó là nơi quyết định UI, nên khi có bất kỳ sự thay đổi cần thiết nào trên UI, nó sẽ được gọi lại để render tương ứng.
 
-## 5. Cách làm việc với StatlessWidget và StatefulWidget
+## 6. Cách làm việc với StatlessWidget và StatefulWidget
 
 Ý tưởng của mình như sau:
 
 Đầu tiên mình sẽ tạo một button là StalessWidget, sau đó convert button đó sang StatefulWidget. Mục đích của button này sẽ là like / unlike một cái gì đó giống như nút like trên facebook. Okay! Bắt tay vào thôi nào.
 
-### 5.1. StatelessWidget
+### 6.1. StatelessWidget
 
 Các bạn tạo mới Flutter project và file `like_button.dart` nhé!
 
@@ -159,11 +172,11 @@ Rồi chúng ta cùng build và xem kết quả nhé!
 
 ##### Kết quả:
 
-![4](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/4.png)
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/4.png" style="width:50%;height:50%;">
 
 Khi ấn nút like thì trên console sẽ log ra cho ta text *"Liked"*. 
 
-### 5.2. StatefulWidget
+### 6.2. StatefulWidget
 
 Các bạn có thể dùng lại project trước đó hoặc tạo mới project tương tự như vậy.
 ![5](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/5.png)
@@ -232,7 +245,7 @@ class _LikeButtonState extends State<LikeButton> {
 
 Vậy là xong! Chúng ta cùng build lên xem kết quả nhé! Hiện tại, mình vẫn giữ `MyHomePage` giống như phần StatelessWidget nha!
 
-![7](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/7.gif)
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/7.gif" style="width:40%;height:40%;">
 
 Các bạn có để ý thấy phần `Text` ở dưới vẫn chưa khớp với trạng thái của button không? Đây là lúc chúng ta sẽ biến `MyHomePage` thành một StatefulWidget luôn!
 
@@ -330,11 +343,11 @@ class _MyHomePageState extends State<MyHomePage> {
 
 ##### Kết quả
 
-![8](https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif)
+<img src="https://github.com/vanle57/stateless-stateful-widget/blob/main/images/8.gif" style="width:40%;height:40%;">
 
 #### [Demo source code](https://github.com/vanle57/stateless-stateful-widget/tree/main/demo%20source%20code)
 
-## 6. Tổng kết
+## 7. Tổng kết
 
 Tóm lại sự khác nhau rõ rệt và có thể dễ dàng thấy được nhất giữa StalessWidget và StatefulWidget chính là khả năng reload của widget ở runtime. Nếu như StalessWidget không thể thay đổi chỉ trừ khi được khởi tạo lại thì StatefulWidget có các trạng thái có thể thay đổi được và Flutter sẽ render lại UI cho phù hợp với từng trạng thái.
 
