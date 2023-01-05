@@ -11,17 +11,17 @@ Khi tiếp xúc với Flutter, có lẽ các bạn đều đã quen hoặc nếu
 Mình cũng khá chắc là trong số những bạn đang đọc bài viết này cũng có một số bạn đã biết về hai loại này nhưng để hiểu về nó thì còn khá mơ hồ. Vậy nên bài viết này mình sẽ cố gắng trình bày về chúng một cách đơn giản nhất có thể để các bạn nắm bắt được.
 
 ## 3. Chuẩn bị
-IDE:
+- IDE:
 
-Visual Studio Code version 1.67.0
+ - Visual Studio Code version 1.67.0
 
-Android Studio Chipmunk 2021.2.1
+ - Android Studio Chipmunk 2021.2.1
 
-XCode version 13.3.1
+ - XCode version 13.3.1
 
-Flutter SDK version 2.10.5
+- Framework: Flutter SDK version 2.10.5
 
-Kiến thức: ngôn ngữ lập trình Dart và Flutter cơ bản
+- Kiến thức: ngôn ngữ lập trình Dart và Flutter cơ bản
 
 ## 4. Khái niệm State
 
