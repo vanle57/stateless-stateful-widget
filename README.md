@@ -13,11 +13,11 @@ Mình cũng khá chắc là trong số những bạn đang đọc bài viết n�
 ## 3. Chuẩn bị
 - IDE:
 
- - Visual Studio Code version 1.67.0
-
- - Android Studio Chipmunk 2021.2.1
-
- - XCode version 13.3.1
+  - Visual Studio Code version 1.67.0
+  
+  - Android Studio Chipmunk 2021.2.1
+  
+  - XCode version 13.3.1
 
 - Framework: Flutter SDK version 2.10.5
 
